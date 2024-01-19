@@ -17,9 +17,9 @@ public class Projet {
         this.taches = new ArrayList<>();
     }
 
-    public void ajouterTacheAuProjet(String titre, String description) throws TacheInexistante {
-        gestionTaches.ajouterTache(titre, description);
-        taches.add(new Tache(titre, description));
+    public void ajouterTacheAuProjet(String titre, String description, int duree) throws TacheInexistante {
+        gestionTaches.ajouterTache(titre, description, duree);
+        taches.add(new Tache(titre, description, duree));
     }
 
     public void completerTacheDansLeProjet(String titre) throws TacheInexistante {

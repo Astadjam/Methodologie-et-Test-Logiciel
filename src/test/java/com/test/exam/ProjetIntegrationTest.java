@@ -26,7 +26,7 @@ public class ProjetIntegrationTest {
     @Test
     public void testAjouterTacheAuProjet() throws TacheInexistante {
         // Ajouter une tâche au projet
-        projet.ajouterTacheAuProjet("Tache Projet 1", "Description tache projet 1");
+        projet.ajouterTacheAuProjet("Tache Projet 1", "Description tache projet 1", 1);
 
         // Vérifier que la tâche a été ajoutée au projet
         List<Tache> tachesDuProjet = projet.getTaches();
@@ -40,7 +40,7 @@ public class ProjetIntegrationTest {
     @Test
     public void testCompleterTacheDansLeProjet() throws TacheInexistante {
         // Ajouter une tâche au projet
-        projet.ajouterTacheAuProjet("Tache Projet 2", "Description tache projet 2");
+        projet.ajouterTacheAuProjet("Tache Projet 2", "Description tache projet 2", 2);
 
         // Marquer la tâche comme complétée dans le projet
         projet.completerTacheDansLeProjet("Tache Projet 2");

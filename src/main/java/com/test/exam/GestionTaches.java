@@ -17,7 +17,7 @@ public class GestionTaches {
     }
 
     // Méthode pour ajouter une nouvelle tâche
-    public void ajouterTache(String titre, String description) {
+    public void ajouterTache(String titre, String description, int duree) {
         // Ajoute la tâche à la liste avec l'état initial non-complété
         taches.put(titre, false);
     }
